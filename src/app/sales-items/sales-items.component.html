@@ -3,7 +3,11 @@
     <div id="invoice-list" class="container-fluid capped-1800 bg-white wide-list round-8 shadow-2 mb-30">
       <div class="head d-flex justify-content-between align-items-center">
         <h2 class="">Item List</h2>
-        <a data-new-item routerLink="/SalesItems/SalesItemsMid"><span class="capicon cap-plus-alt me-2"></span>Add new item</a>
+        <div>
+          <app-search-input style="  float:left" ></app-search-input>
+          <a data-new-item routerLink="/SalesItems/SalesItemsMid"><span class="capicon cap-plus-alt me-2"></span>Add new item</a>
+        </div>
+
       </div>
       <table class="table table-borderless">
         <thead>

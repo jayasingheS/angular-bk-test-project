@@ -13,6 +13,7 @@ import { SalesMidComponent } from './sales/sales-mid/sales-mid.component';
 import { SalesItemsMidComponent } from './sales-items/sales-items-mid/sales-items-mid.component';
 import { SalesCustomersMidComponent } from './sales-customers/sales-customers-mid/sales-customers-mid.component';
 import { SalesEstimateMidComponent } from './sales-estimate/sales-estimate-mid/sales-estimate-mid.component';
+import { SearchInputComponent } from './Compornent/search-input/search-input.component';
 
 
 
@@ -33,6 +34,7 @@ import { SalesEstimateMidComponent } from './sales-estimate/sales-estimate-mid/s
     SalesItemsMidComponent,
     SalesCustomersMidComponent,
     SalesEstimateMidComponent,
+    SearchInputComponent,
 
 
 

@@ -4,7 +4,12 @@
     <div id="invoice-list" class="container-fluid capped-1800 bg-white wide-list round-8 shadow-2 mb-30">
       <div class="head d-flex justify-content-between align-items-center">
         <h2 class="">Invoice List</h2>
-        <a id="create-new-invoice" class="nav-link " routerLink="/SalesMid"><span class="capicon cap-plus-alt me-2"></span>Create new invoice</a>
+        <div>
+          <app-search-input style="  float:left" ></app-search-input>
+          <a id="create-new-invoice" class="nav-link " routerLink="/SalesMid"><span class="capicon cap-plus-alt me-2"></span>Create new invoice</a>
+
+        </div>
+
       </div>
       <table class="table table-borderless">
         <thead>

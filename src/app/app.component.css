@@ -1,15 +1,1 @@
-.inputSearch{
-  border-width:0px;
-  border-bottom-width:1px;
-  border-bottom-color: #6f42c1;
-}
-.inputSearch:focus{
-  border-width:0px;
-  border-bottom-width:1px;
-  border-bottom-color: #6f42c1;
-}
 
-*:focus {
-  outline: none;
-
-}
