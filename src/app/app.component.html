@@ -7,10 +7,17 @@
 <header class="fixed-top">
   <nav class="navbar navbar-expand navbar-light bg-white shadow-sm" aria-label="Main navigation">
     <div class="container-fluid capped-1600">
-      <div class="col-3">
+      <div class="col-1">
         <a class="navbar-brand" href="#">
           <img src="./assets/img/logo.svg" alt="">
         </a>
+      </div>
+      <div class="col-2">
+        <!-- Search form -->
+
+          <input  class="inputSearch  " type="text" placeholder="Search" aria-label="Search"
+                 mdbInput>
+
       </div>
       <div class="justify-content-center" id="primary-nav">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -57,7 +64,7 @@
       </div>
     </div>
   </nav>
-  <!-- Sales Pages -->
+
   <div class="secondary-nav-wrap nav-scroller bg-white">
     <nav id="secondary-nav" class="nav nav-underline col-8 justify-content-center capped-1600 mx-auto">
       <a class="nav-link" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"  routerLink="/">
@@ -88,12 +95,6 @@
     </nav>
   </div>
 
-
-  <!-- Receipt Pages -->
-
-  <!-- Bank Feed Pages -->
-
-  <!-- Reports -->
 </header>
 <router-outlet></router-outlet>
 
