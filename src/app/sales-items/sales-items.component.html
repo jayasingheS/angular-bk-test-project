@@ -1,0 +1,136 @@
+<div class="page capped-1900">
+  <main>
+    <div id="invoice-list" class="container-fluid capped-1800 bg-white wide-list round-8 shadow-2 mb-30">
+      <div class="head d-flex justify-content-between align-items-center">
+        <h2 class="">Item List</h2>
+        <a data-new-item routerLink="/SalesItems/SalesItemsMid"><span class="capicon cap-plus-alt me-2"></span>Add new item</a>
+      </div>
+      <table class="table table-borderless">
+        <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Product Code</th>
+          <th scope="col">Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Available Qty</th>
+          <th scope="col">Action
+            <div class="d-inline-flex dropdown">
+              <span class="capicon cap-eye-alt text-main" id="dLabel" type="button" data-bs-toggle="dropdown" aria-expanded="false"></span>
+              <div class="dropdown-menu dropdown-menu-end tooltip-menu" aria-labelledby="dLabel">
+                <ul>
+                  <li><span class="capicon cap-eye"></span>Date</li>
+                  <li><span class="capicon cap-eye"></span>Invoice Number</li>
+                  <li><span class="capicon cap-eye"></span>Customer</li>
+                  <li><span class="capicon cap-eye"></span>Name</li>
+                  <li><span class="capicon cap-eye"></span>Total Amount</li>
+                  <li><span class="capicon cap-eye"></span>Due Amount</li>
+                  <li><span class="capicon cap-eye"></span>Date</li>
+                  <li><span class="capicon cap-eye"></span>Invoice Number</li>
+                  <li><span class="capicon cap-eye"></span>Customer</li>
+                  <li><span class="capicon cap-eye"></span>Name</li>
+                  <li><span class="capicon cap-eye"></span>Total Amount</li>
+                  <li><span class="capicon cap-eye"></span>Due Amount</li>
+                </ul>
+              </div>
+            </div>
+          </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <th scope="row">
+            <div class="form-check">
+              <input class="form-check-input themed-checkbox" type="checkbox" value="">
+            </div>
+          </th>
+          <td>
+            <a href="">63576978</a>
+          </td>
+          <td>Macbook</td>
+          <td>$57</td>
+          <td>34</td>
+          <td>
+            <span class="capicon cap-edit me-2"></span>
+            <span class="capicon cap-trash"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <div class="form-check">
+              <input class="form-check-input themed-checkbox" type="checkbox" value="">
+            </div>
+          </th>
+          <td>
+            <a href="">63576978</a>
+          </td>
+          <td>Macbook</td>
+          <td>$57</td>
+          <td>34</td>
+          <td>
+            <span class="capicon cap-edit me-2"></span>
+            <span class="capicon cap-trash"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <div class="form-check">
+              <input class="form-check-input themed-checkbox" type="checkbox" value="">
+            </div>
+          </th>
+          <td>
+            <a href="">63576978</a>
+          </td>
+          <td>Macbook</td>
+          <td>$57</td>
+          <td>34</td>
+          <td>
+            <span class="capicon cap-edit me-2"></span>
+            <span class="capicon cap-trash"></span>
+          </td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <div class="form-check">
+              <input class="form-check-input themed-checkbox" type="checkbox" value="">
+            </div>
+          </th>
+          <td>
+            <a href="">63576978</a>
+          </td>
+          <td>Macbook</td>
+          <td>$57</td>
+          <td>34</td>
+          <td>
+            <span class="capicon cap-edit me-2"></span>
+            <span class="capicon cap-trash"></span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="foot">
+        <div class="d-flex justify-content-end align-items-center">
+          <!-- <span class="me-25"><span class="dot dot-approved me-12"></span>Paid</span>
+          <span class="me-25"><span class="dot dot-due me-12"></span>Due</span>
+          <span class="me-25"><span class="dot dot-partial me-12"></span>Partially Paid</span> -->
+          <span class="pagination-title f-primary f--bold me-25">Page</span>
+          <Select>
+            <option value="1">01-25</option>
+            <option value="2">25-50</option>
+            <option value="3">50-75</option>
+            <option value="4">75-100</option>
+          </Select>
+        </div>
+      </div>
+    </div>
+
+    <div id="new-invoice" class="container-fluid capped-1800 bg-white wide-list round-8 shadow-2">
+      <div class="head d-flex justify-content-between align-items-center">
+        <h2 data-new-item class="d-flex align-items-center pointer preview-hide" (click)="onLoadeSalerItemsMid()">
+          <span class="capicon cap-arrow-down-round me-30 text-main"></span>Add new item</h2>
+      </div>
+    </div>
+  </main>
+</div>
