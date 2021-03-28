@@ -10,6 +10,7 @@ import { SupportComponent } from './support/support.component';
 import { SalesMidComponent } from './sales/sales-mid/sales-mid.component';
 import { SalesItemsMidComponent } from './sales-items/sales-items-mid/sales-items-mid.component';
 import { SalesCustomersMidComponent } from './sales-customers/sales-customers-mid/sales-customers-mid.component';
+import { SalesEstimateMidComponent } from './sales-estimate/sales-estimate-mid/sales-estimate-mid.component';
 const routes: Routes = [
   { path: '', component: SalesComponent },
   { path: 'SalesCustomers', component: SalesCustomersComponent },
@@ -20,6 +21,7 @@ const routes: Routes = [
   { path: 'SalesMid', component: SalesMidComponent },
   { path: 'SalesItems/SalesItemsMid', component: SalesItemsMidComponent },
   { path: 'SalesCustomers/SalesCustomersMid', component: SalesCustomersMidComponent },
+  { path: 'SalesEstimate/SalesEstimateMid', component: SalesEstimateMidComponent },
 ];
 
 

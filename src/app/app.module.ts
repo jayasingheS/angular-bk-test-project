@@ -12,6 +12,7 @@ import { SalesNavigationComponent } from './Compornent/sales-navigation/sales-na
 import { SalesMidComponent } from './sales/sales-mid/sales-mid.component';
 import { SalesItemsMidComponent } from './sales-items/sales-items-mid/sales-items-mid.component';
 import { SalesCustomersMidComponent } from './sales-customers/sales-customers-mid/sales-customers-mid.component';
+import { SalesEstimateMidComponent } from './sales-estimate/sales-estimate-mid/sales-estimate-mid.component';
 
 
 
@@ -31,6 +32,7 @@ import { SalesCustomersMidComponent } from './sales-customers/sales-customers-mi
     SalesMidComponent,
     SalesItemsMidComponent,
     SalesCustomersMidComponent,
+    SalesEstimateMidComponent,
 
 
 
