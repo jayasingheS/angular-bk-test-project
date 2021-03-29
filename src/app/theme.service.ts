@@ -5,7 +5,7 @@ import { Theme, light, dark } from './theme/theme.module';
   providedIn: 'root'
 })
 export class ThemeService{
-  private colorActive: string = '#624006';
+  private colorActive: string = '#624096';
   constructor() { }
   getTheme(): string {
     return this.colorActive;
