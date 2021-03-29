@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
-
+import { ThemeService } from '../../theme.service';
 @Component({
   selector: 'app-sales-estimate-mid',
   templateUrl: './sales-estimate-mid.component.html',
@@ -9,9 +8,31 @@ import { Component, OnInit } from '@angular/core';
 export class SalesEstimateMidComponent implements OnInit {
 
   lodingFeature:string = '1';
-  constructor() { }
 
+  colorT = '#624096';
+  constructor( private themeService: ThemeService) { }
+  ngAfterContentChecked(){
+    this.colorT = this.themeService.getTheme();
+  }
   ngOnInit(): void {
+    console.log(this.themeService.getTheme());
+  }
+
+  ngOnChanges(): void{
+    console.log(this.themeService.getTheme());
+
+  }
+
+
+  toggleTheme(value: string): void {
+    this.themeService.setTheme(value);
+    console.log(this.themeService.getTheme());
+    this.colorT = this.themeService.getTheme();
+  }
+  toggleThemeCustom(value): void {
+    this.themeService.setTheme(value.value);
+    console.log(this.themeService.getTheme());
+    this.colorT = this.themeService.getTheme();
   }
   onSlect( item: string){
     this.lodingFeature = item;

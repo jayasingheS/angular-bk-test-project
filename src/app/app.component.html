@@ -19,7 +19,7 @@
             <a class="nav-link" aria-current="page" href="index.html">Dashboard</a>
           </li>
           <li class="nav-item active">
-            <a class="nav-link" href="sales.html">Sales</a>
+            <a class="nav-link" href="sales.html" [ngStyle]="{color:colorT}">Sales</a>
           </li>
           <li class="nav-item ">
             <a class="nav-link" href="receipts.html">Receipts</a>
@@ -61,28 +61,28 @@
 
   <div class="secondary-nav-wrap nav-scroller bg-white">
     <nav id="secondary-nav" class="nav nav-underline col-8 justify-content-center capped-1600 mx-auto">
-      <a class="nav-link" [routerLinkActiveOptions]="{ exact: true }" routerLinkActive="active"  routerLink="/">
+      <a class="nav-link" [routerLinkActiveOptions]="{ exact: true }" [ngStyle]="{color:colorT,'a:active' :colorT}" routerLinkActive="active"  routerLink="/">
         <span class="capicon cap-file-money"></span>
         <span class="title">Invoice</span>
         <span class="capicon cap-plus"></span>
       </a>
 
-      <a class="nav-link " routerLinkActive="active" routerLink="/SalesEstimate">
+      <a class="nav-link " routerLinkActive="active" [ngStyle]="{color:colorT}" [ngStyle]="{color:colorT,'a:active' :colorT}" routerLink="/SalesEstimate">
         <span class="capicon cap-listbox"></span>
         <span class="title">Estimates</span>
         <span class="capicon cap-plus"></span>
       </a>
-      <a class="nav-link"  routerLinkActive="active"  routerLink="/SalesItems">
+      <a class="nav-link"  routerLinkActive="active" [ngStyle]="{color:colorT,'a:active' :colorT}" routerLink="/SalesItems">
         <span class="capicon cap-trolly"></span>
         <span class="title">Items</span>
         <span class="capicon cap-plus"></span>
       </a>
-      <a class="nav-link " routerLinkActive="active"  routerLink="/SalesCustomers">
+      <a class="nav-link " routerLinkActive="active" [ngStyle]="{color:colorT,'a:active' :colorT}" routerLink="/SalesCustomers">
         <span class="capicon cap-user"></span>
         <span class="title">Customers</span>
         <span class="capicon cap-plus"></span>
       </a>
-      <a class="nav-link " routerLinkActive="active"  routerLink="/SalesSettings">
+      <a class="nav-link " routerLinkActive="active" [ngStyle]="{color:colorT,'a:active' :colorT}" routerLink="/SalesSettings">
         <span class="capicon cap-settings"></span>
         <span class="title">Settings</span>
       </a>

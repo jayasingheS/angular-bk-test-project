@@ -4,7 +4,7 @@
     <div class="sidebar-content">
       <div class="d-flex justify-content-between align-items-center">
         <h2 class="sidebar-title">Item List</h2>
-        <a class="create-new" href=""><span class="capicon cap-plus-alt me-2"></span>New</a>
+        <a [ngStyle]="{color:colorT}" class="create-new" href=""><span class="capicon cap-plus-alt me-2"></span>New</a>
       </div>
 
       <div class="searchbar">
@@ -108,7 +108,7 @@
                 <!-- <div class="container-fluid"> -->
                 <div class="row g-0">
                   <button type="button" class="col btn btn-cancel-outline me-3">Cancel</button>
-                  <button type="button" class="col btn btn-accent">Save</button>
+                  <button type="button" class="col btn btn-accent" [ngStyle]="{backgroundColor:colorT}">Save</button>
                 </div>
                 <!-- </div> -->
               </div>

@@ -14,6 +14,8 @@ import { SalesItemsMidComponent } from './sales-items/sales-items-mid/sales-item
 import { SalesCustomersMidComponent } from './sales-customers/sales-customers-mid/sales-customers-mid.component';
 import { SalesEstimateMidComponent } from './sales-estimate/sales-estimate-mid/sales-estimate-mid.component';
 import { SearchInputComponent } from './Compornent/search-input/search-input.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {ThemeService} from './theme.service';
 
 
 
@@ -42,10 +44,11 @@ import { SearchInputComponent } from './Compornent/search-input/search-input.com
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
 
-  providers: [],
+  providers: [ThemeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

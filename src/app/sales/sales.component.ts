@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from '@angular/router';
-
+import { ThemeService } from '../theme.service';
 @Component({
   selector: 'app-sales',
   templateUrl: './sales.component.html',
@@ -8,13 +8,21 @@ import {Router} from '@angular/router';
 })
 export class SalesComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  colorT = '#000000';
+
+  constructor(private router: Router, private themeService: ThemeService) {
+    this.colorT = themeService.getTheme();
+    console.log(themeService.getTheme());
+  }
 
   ngOnInit(): void {
   }
 
-  onLoadeSalerMid(){
-    this.router.navigate(['/SalesMid']);
+  ngAfterContentChecked() {
+    this.colorT = this.themeService.getTheme();
   }
 
+  onLoadeSalerMid() {
+    this.router.navigate(['/SalesMid']);
+  }
 }
